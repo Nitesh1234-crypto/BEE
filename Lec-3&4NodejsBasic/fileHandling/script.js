@@ -4,10 +4,10 @@ let fileName="data2.txt";
 let filePath= path.join(__dirname,"data",fileName);
 fs.writeFile(
     filePath,
-    "Hello world again",
+    ".....!!!!!!",
     {
         encoding:"utf-8",
-        flag:"w"
+        flag:"a"
     },
     (err)=>{
            if(err){

@@ -1,7 +1,6 @@
 let fs= require("fs");
 let path= require("path");
-let fileName="data3.txt";
-let filePath= path.join(__dirname,"..","data",fileName);
+let filePath= path.join(__dirname,"..","data","data2.txt");
 
 fs.readFile(
     filePath,
@@ -9,8 +8,10 @@ fs.readFile(
         encoding:"utf-8"
     },
     (err,data)=>{
-        if(err) return err.message;
-        console.log(data);
+         if(err){
+            console.log(err.message);
+         }else{
+            console.log(data);
+         }
     }
 )
-
