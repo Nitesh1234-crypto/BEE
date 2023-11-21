@@ -8,13 +8,14 @@
 </head>
 <body>
     <h1>Todo App</h1>
-    <form action="/addtodo" method="post">
+    <form class="myform" action="/addtodo" method="post">
         <input type="text" name="taskitem" id="taskitem">
         <button type="submit">Add task</button>
     </form>
     <div class="tasklist">
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
