@@ -1,0 +1,14 @@
+1. to create a new database or to switch on the existing database
+----------------------------------------------------------
+use <databaseName>
+
+2. to check all the database
+-------------------------------------
+show dbs 
+
+INSERT
+---------
+1. db.<collectionName>.insertOne(<document>) // if collection is not available , it will create a new
+collection and insert one document inside that collection
+
+2. db.<collectionName>.insertMany([<document>,<document>, ....]) 
