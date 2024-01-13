@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All Blog</h1>
+    {{#each blogs as |blog|}}
+    <div>{{blog.title}}</div>
+    <img src={{blog.image}} alt="" style="width: 100px; height:100px">
+    {{/each}}
+</body>
+</html>
